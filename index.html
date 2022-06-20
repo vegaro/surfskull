@@ -428,10 +428,10 @@
           </h2>
 
           <div class="row mb-60 mb-xs-40">
-            <div class="col-md-8 col-md-offset-2">
+            <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
               <div class="row">
                 <!-- Phone -->
-                <div class="col-sm-6 col-lg-6 pt-20 pb-20 pb-xs-0">
+                <div class="col-sm-6 col-lg-4 pt-20 pb-20 pb-xs-0">
                   <div class="contact-item">
                     <div class="ci-icon">
                       <i class="fa fa-phone"></i>
@@ -447,8 +447,22 @@
                 </div>
                 <!-- End Phone -->
 
+                <!-- Address -->
+                <div class="col-sm-6 col-lg-4 pt-20 pb-20 pb-xs-0">
+                  <div class="contact-item">
+                    <div class="ci-icon">
+                      <i class="fa fa-map-marker"></i>
+                    </div>
+                    <div class="ci-title font-alt">Dirección</div>
+                    <div class="ci-text">
+                      Playa de San Antolín, Naves de Llanes
+                    </div>
+                  </div>
+                </div>
+                <!-- End Address -->
+
                 <!-- Email -->
-                <div class="col-sm-6 col-lg-6 pt-20 pb-20 pb-xs-0">
+                <div class="col-sm-6 col-lg-4 pt-20 pb-20 pb-xs-0">
                   <div class="contact-item">
                     <div class="ci-icon">
                       <i class="fa fa-envelope"></i>
@@ -468,6 +482,42 @@
         </div>
       </section>
       <!-- End Contact Section -->
+
+      <!-- Google Map -->
+      <div class="google-map">
+        <div
+          data-address="[43.4425378,-4.8767388]"
+          id="custom-map-canvas"
+        ></div>
+
+        <a href="#" class="map-section">
+          <div class="map-toggle" aria-hidden="true">
+            <div class="mt-icon">
+              <i class="fa fa-map-marker"></i>
+            </div>
+            <div class="mt-text font-alt">
+              <div class="mt-open">
+                Abrir el mapa <i class="fa fa-angle-down"></i>
+              </div>
+              <div class="mt-close">
+                Cerrar el mapa <i class="fa fa-angle-up"></i>
+              </div>
+            </div>
+          </div>
+        </a>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2896.8724475097774!2d-4.879083048903438!3d43.44237987395301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd49e8beccfa12e1%3A0xf2cceedec80c51df!2sSurf%20School%20Skull%20Llanes!5e0!3m2!1sen!2ses!4v1655723369497!5m2!1sen!2ses"
+          width="600"
+          height="450"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+          loading="lazy"
+        ></iframe>
+      </div>
+      <!-- End Google Map -->
 
       <!-- See-you Section -->
       <section class="page-section" id="see-you">
@@ -664,10 +714,6 @@
     </div>
     <!-- End Page Wrap -->
 
-    <script
-      type="text/javascript"
-      src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"
-    ></script>
     <!-- JS -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
